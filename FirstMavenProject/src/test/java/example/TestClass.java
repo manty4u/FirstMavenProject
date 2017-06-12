@@ -2,6 +2,7 @@ package example;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -18,7 +19,7 @@ public class TestClass {
 	}	
 	@BeforeTest
 	public void beforeTest() {	
-	    driver = new FirefoxDriver();  
+	    driver = new HtmlUnitDriver();
 	}		
 	@AfterTest
 	public void afterTest() {
